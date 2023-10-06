@@ -6,7 +6,7 @@
 
 ## Hey 👋, This is qianshu
 
-[![Mail Badge](https://img.shields.io/badge/-11812109@mail.sustech.edu.cn-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:11812109@mail.sustech.edu.cn)](mailto:weizihao128@outlook.com.cn) [![Github Badge](https://img.shields.io/badge/-千束-grey?style=flat&logo=github&logoColor=white&link=https://github.com/jinmuqianshu128/)](https://github.com/jinmuqianshu128/)
+[![Mail Badge](https://img.shields.io/badge/-jinmuqianshu128.github.io-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:jinmuqianshu128.github.io)](mailto:weizihao128@outlook.com.cn) [![Github Badge](https://img.shields.io/badge/-千束-grey?style=flat&logo=github&logoColor=white&link=https://github.com/jinmuqianshu128/)](https://github.com/jinmuqianshu128/)
 ## Some of my Github Stats
 <p align=left> <img src=https://komarev.com/ghpvc/?username=jinmuqianshu128 alt=千束 /> </p>
 
