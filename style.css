@@ -1,0 +1,297 @@
+body { 
+    overflow: hidden; /* 隐藏溢出部分 */
+    height: 90vh;
+    background :#e7e7e7 url('/壁纸1.png')
+    center no-repeat fixed;
+    background-size: cover; 
+    backdrop-filter: blur(3.5px);
+}
+.petals {
+position: absolute;
+width: 10px;
+height: 10px;
+background-color: pink; /* 花瓣颜色 */
+border-radius: 50%;
+animation: fall 5s linear infinite; /* 使用动画效果 */
+}
+
+.circle {
+border-radius: 50%;
+ width: 300px;
+ height: 300px; 
+}
+.hh{
+    color:magenta;
+    font-size:40px ;
+    font-weight:150;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    /* background-color: blue; */
+}
+.center{
+    position: absolute;
+    top:35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.jwa{
+    position:absolute;
+    background-color: #f25d8e;
+    border-radius: 5px;
+    color:#e7e7e7;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transform: transform 80ms ease-in;
+    width: 70px;
+    height:30px ;
+    top: 25%;
+    left: 94%;
+}
+.jwa:active{
+    transform: scale(0.95);
+}
+.dbl{
+    position:relative;
+    top: -1%;
+    right:1% ;
+    height: 60px;
+    width: 1930px;
+    border-radius: 0px;
+    background-color: rgb(67,68 , 70);
+
+    
+    
+}
+input{
+    width:100;
+    background-color: #fff;
+    padding: 0.9rem 0.9rem;
+    border: none;
+    outline: none;
+}
+.form1{
+    position: absolute;
+    color: white;
+    font-size: large;
+    top: 27.5%;
+    right:93.5%;
+}
+#aa{
+    color: white;
+    text-decoration: none;
+}
+.a1{
+    position: absolute;
+    color: white;
+    font-size: large;
+    top: 27.5%;
+    right:14%;
+}
+.a2{
+    position: absolute;
+    color: white;
+    font-size: large;
+    top: 27.5%;
+    right:8%;
+}
+.a3{
+    position: absolute;
+    color: white;
+    font-size: large;
+    top: 27.5%;
+    right:2%;
+}
+.a4{
+  position: absolute;
+  color: white;
+  font-size: large;
+  top: 27.5%;
+  right:20.5%;
+}
+#aa:hover{
+  color:rgb(0, 255, 204);
+}
+.hhh{
+    color:rgb(255, 0, 0);
+    font-size:40px ;
+    font-weight:150;
+    position: absolute;
+    top: 127%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    /* background-color: blue; */
+}
+.hhhh{
+    color:rgb(255, 0, 0);
+    font-size:25px ;
+    font-weight:200;
+    position: absolute;
+    top: 155%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    /* background-color: blue; */
+}
+.hhhhh{
+    color:rgb(255, 0, 0);
+    font-size:25px ;
+    font-weight:200;
+    position: absolute;
+    top: 176%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 525px;
+    /* background-color: blue; */
+}
+.hhhhhh{
+    color:rgb(255, 0, 0);
+    font-size:25px ;
+    font-weight:200;
+    position: absolute;
+    top: 197%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 725px;
+    /* background-color: blue; */
+}
+#model-box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#overlay {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    /* IE9以下不支持rgba模式 */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 兼容IE8及以下 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+    display: none;
+  }
+  /* 弹出框主体 */
+  .popup {
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    background-color:#fcb5cc;
+    /* max-width: 400px;
+    min-width: 200px; */
+    width: 500px;
+    height: 330px;
+    border-radius: 5px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  /* 弹出框的标题 */
+  .popup_title {
+    position: relative;
+    top: -11%;
+    font-size: 2rem;
+    font-family: 仿宋;
+    font-weight: bold;
+    height:22.5%;
+    line-height: 100px;
+    border-bottom: solid 1px #908a8a;
+    /* background-color: crimson; */
+  }
+  /* 弹出框的内容 */
+  .popup_content {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 23.5%;
+    left: 13%;
+    height: 50px;
+    line-height: 50px;
+    padding: 15px 20px;
+  }
+  .popup_content2 {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 42.5%;
+    left: 13%;
+    height: 50px;
+    line-height: 50px;
+    padding: 15px 20px;
+  }
+  /* 弹出框的按钮栏 */
+  .popup_btn {
+    position: absolute;
+    top: 55%;
+    /* background-color: aqua; */
+    width: 500px;
+    height: 170px;
+  }
+  /* 弹出框的按钮 */
+  .popup_btn button {
+    top: 30%;
+    color: #778899;
+    width: 30%;
+    height: 50px;
+    cursor: pointer;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+    margin: 5px 10px;
+    color: #ffffff;
+    background-color: #63a7e3;
+    font-size: large;
+  }
+  .confirmBtn{
+    position: relative;
+    left: 0%;
+  }
+  .cancelBtn{
+    position: relative;
+    top: 50%;
+  }
+  .input1,.input2{
+    input[type="text"] {
+        color: #333; /* 文本颜色 */
+        background-color: #fff; /* 背景色 */
+      }
+      border: 1px solid #ccc; /* 边框样式 */
+    border-radius: 5px; /* 边框圆角 */
+    font-size: 16px; /* 字体大小 */
+    padding:10px; /* 内边距 */
+    margin-bottom: 15px; /* 下边距 */
+  }
+  .input1{
+    position: relative;
+    top: -11%;
+    left: 25%;
+  }
+  .input2{
+    position: relative;
+    top: 7.5%;
+    left:-19%;
+  }
+  .h11{
+    position: relative;
+    top: -260%;
+    left:-30%;
+    font-size: 5rem;
+    color: red;
+    height:60%;
+    width: 176%;
+    /* background-color: #333; */
+
+  }
+  
