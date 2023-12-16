@@ -1,0 +1,76 @@
+body {
+    height: 80vh;
+    background :#e7e7e7 url('/壁纸2.png')
+    center no-repeat fixed;
+    background-size: cover; 
+    backdrop-filter: blur(3.5px);
+  }
+  
+  * {
+      box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+  }
+  
+  input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+      background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+      border-radius: 5px;
+      /* background-color: #f2f2f2; */
+      padding: 10px;
+      height: 1000px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+      float: right;
+      position: relative;
+      left: 25%;
+      
+      width: 50%;
+      margin-top: 6px;
+      padding: 40px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  
+  /* 响应式布局 */
+  @media screen and (max-width: 600px) {
+      .column, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+      }
+  }
+  .lxwm{
+    color: red;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  .txxx{
+    font-size: 1.5rem;
+    color:deeppink;
+  }
