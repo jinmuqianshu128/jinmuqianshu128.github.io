@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>好看的！！！</title>
+    <style>
+        .video1{
+            width: 100%;
+            overflow: clip;
+        }
+        :not(:root):fullscreen {
+    object-fit: contain;
+    user-select: text;
+    position: fixed !important;
+    box-sizing: border-box !important;
+    min-width: 0px !important;
+    max-width: none !important;
+    min-height: 0px !important;
+    max-height: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    transform: none !important;
+    inset: 0px !important;
+    margin: 0px !important;
+}
+    :not(:root):fullscreen::backdrop {
+    position: fixed;
+    inset: 0px;
+    background: black;
+}
+    </style>
+</head>
+<body>
+    <body>
+
+        <video class="video1" preload="auto" autoplay controls loop="loop" src="/video/video.mp4"></video>
+
+        <script>
+    requestFullScreen();
+    function requestFullScreen(element) {
+	var element=document.documentElement;
+ // 判断各种浏览器，找到正确的方法
+ //alert(element.webkitRequestFullScreen);
+ var requestMethod = element.requestFullScreen || //W3C
+ element.webkitRequestFullScreen || //Chrome等
+ element.mozRequestFullScreen || //FireFox
+ element.msRequestFullScreen; //IE11
+ if (requestMethod) {
+  requestMethod.call(element);
+ }
+ else if (typeof window.ActiveXObject !== "undefined") {//for Internet Explorer
+  var wscript = new ActiveXObject("WScript.Shell");
+  if (wscript !== null) {
+   wscript.SendKeys("{F11}");
+  }
+ }
+}
+function changeFrameHeight(){
+    var ifm= document.getElementById("iframepage"); 
+    ifm.height=document.documentElement.clientHeight;
+
+}
+
+window.onresize=function(){  
+     changeFrameHeight();  
+
+} 
+        </script>
+      </body>      
+</body>
+</html>
