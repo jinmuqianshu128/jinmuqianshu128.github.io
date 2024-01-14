@@ -1,7 +1,0 @@
-#
-# robots.txt for emlog
-#
-
-User-agent: *
-Disallow: /admin/
-Disallow: /config.php
