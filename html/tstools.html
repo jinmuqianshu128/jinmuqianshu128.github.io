@@ -5,113 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='description' content='震惊！一个在校学生竟然凭自己一人写了一个个人博客，而他就是前无古人后无来者，上得厅堂下得厨房，能文能武，身怀绝技，一手遮天，大名鼎鼎的武林第一美男子————“铁树不开花”'>
     <meta http-equiv='content-language' content='zh-gb'>
+  
     <title>TS工具箱</title>
     <style>
+        /* 在小屏幕设备上适应的样式 */
+        @media screen and (max-width: 768px) {
+          /* 样式修改 */
+        }
 
+        /* 在中等屏幕设备上适应的样式 */
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+          /* 样式修改 */
+        }
 
-/* 在小屏幕设备上适应的样式 */
-@media screen and (max-width: 768px) {
-  /* 样式修改 */
-}
+        /* 大屏幕设备上适应的样式 */
+        @media screen and (min-width: 1025px) {
+          /* 样式修改 */
+        }
 
-/* 在中等屏幕设备上适应的样式 */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* 样式修改 */
-}
-
-/* 大屏幕设备上适应的样式 */
-@media screen and (min-width: 1025px) {
-  /* 样式修改 */
-}
-
-
-        body{
+        body {
             height: 90vh;
-            background :#e7e7e7 url('/img/下载壁纸.png')
-            center no-repeat fixed;
+            background: #e7e7e7 url('/img/下载壁纸.png') center no-repeat fixed;
             background-size: cover; 
             backdrop-filter: blur(3.5px);
-        }
-        .dbl{
-        position:relative;
-        top: -1%;
-        right:1% ;
-        height: 60px;
-        width: 1930px;
-        border-radius: 0px;
-        background-color: rgb(67,68 , 70);
-        font-family: 微软雅黑;
-        }
-                .form1{
-    position: absolute;
-    color: white;
-    font-size: large;
-    top: 27.5%;
-    right:93.5%;
-                    
-    html, body {
-    height: 100%;
-    overflow-y: scroll;
-}
-                
-}
-#aa{
-    color: white;
-    text-decoration: none;
-}
-.a1{
-    position: absolute;
-    color: white;
-    font-size: large;
-    top: 27.5%;
-    right:14%;
-}
-.a2{
-    position: absolute;
-    color: white;
-    font-size: large;
-    top: 27.5%;
-    right:8%;
-}
-.a3{
-    position: absolute;
-    color: white;
-    font-size: large;
-    top: 27.5%;
-    right:2%;
-}
-.a4{
-    position: absolute;
-    color: white;
-    font-size: large;
-    top: 27.5%;
-    right:20.5%;
-}
-</style>
-
-</head>
-<body>
-    
-      <div class="dbl">
-        <form class="form1">铁树不开花</form>
-            <a href="/index.html" class="a4" id="aa">返回主页</a>
-            <a href="/html/egao.html" class="a1" id="aa">我的故事</a>
-            <a href="/html/update.html" class="a2" id="aa">更新说明</a>
-            <a href="" class="a3" id="aa">联系我们</a>
-        </div>
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86
-         src="//music.163.com/outchain/player?type=2&id=1413585838&auto=1&height=66"></iframe>
-        <style>
-        body {
             font-family: Arial, sans-serif;
             background-color: #f0f8ff; /* 天蓝色背景 */
             margin: 0;
             padding: 0;
         }
 
+        #aa:hover {
+            color: rgb(0, 255, 204);
+        }
+
+        .dbl {
+            position: relative;
+            top: 0%;
+            right: -1%;
+            height: 60px;
+            width: 100%; /* 自动适应浏览器宽度 */
+            max-width: 1930px; /* 最大宽度限制 */
+            border-radius: 0;
+            background-color: rgb(67, 68, 70);
+            font-family: 微软雅黑;
+            display: flex;
+            align-items: center;
+            padding: 0 20px; /* 添加内边距以便于内容对齐 */
+            box-sizing: border-box;
+        }
+
+        .form1 {
+            color: white;
+            font-size: large;
+        }
+
+        #aa {
+            color: white;
+            text-decoration: none;
+        }
+
+        .a1, .a2, .a3, .a4 {
+            position: absolute;
+            color: white;
+            font-size: large;
+            top: 27.5%;
+        }
+
+        .a1 {
+            right: 14%;
+        }
+
+        .a2 {
+            right: 8%;
+        }
+
+        .a3 {
+            right: 2%;
+        }
+
+        .a4 {
+            right: 20.5%;
+        }
+
         .container {
             max-width: 900px;
-            margin: 40px auto;
+            margin: -60px auto; /* 向上移动 20px */
             padding: 20px;
             background-color: #ffffff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -181,13 +159,22 @@
         }
     </style>
 </head>
-
 <body>
+    <div class="dbl">
+        <form class="form1">铁树不开花</form>
+        <a href="/index.html" class="a4" id="aa">返回主页</a>
+        <a href="" class="a1" id="aa">我的故事</a>
+        <a href="/html/update.html" class="a2" id="aa">更新说明</a>
+        <a href="" class="a3" id="aa">联系我们</a>
+    </div>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86"
+     src="//music.163.com/outchain/player?type=2&id=1413585838&auto=1&height=66"></iframe>
     <div class="container">
         <h1>TS工具箱</h1>
         <p class="description">这是一款高效、易用的工具箱，帮助您提高工作效率。</p>
 
         <div class="features">
+            
             <h2>主要功能</h2>
             <ul>
                 <li>功能1：简单易用的界面设计</li>
@@ -196,16 +183,16 @@
                 <li>功能4：小白更容易上手</li>
             </ul>
         </div>
-
+        <div class="download">
+            <a href="https://github.com/jinmuqianshu128/jinmuqianshu128.github.io/raw/main/%E4%B8%80%E9%94%AE%E7%8C%AB%E7%8C%AB%E5%9B%9E%E6%94%B6%E7%AB%99.exe" download>立即下载</a>
+        </div>
         <div class="screenshot">
             <h2>软件截图</h2>
             <img src="/img/jietu.png" alt="软件截图">
         </div>
 
-        <div class="download">
-            <a href="https://github.com/jinmuqianshu128/jinmuqianshu128.github.io/raw/main/%E4%B8%80%E9%94%AE%E7%8C%AB%E7%8C%AB%E5%9B%9E%E6%94%B6%E7%AB%99.exe" download>立即下载</a>
-        </div>
+        
     </div>
-        <script src="/js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
