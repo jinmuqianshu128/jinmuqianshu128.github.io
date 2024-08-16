@@ -2,18 +2,22 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
 <loc>https://tiaotiaohu128.xyz/html/egao.html</loc>
+<priority>1.0</priority>
 <changefreq>always</changefreq>
 </url>
 <url>
 <loc>https://tiaotiaohu128.xyz/html/tstools.html</loc>
+<priority>1.0</priority>
 <changefreq>always</changefreq>
 </url>
 <url>
 <loc>https://tiaotiaohu128.xyz/html/update.html</loc>
+<priority>1.0</priority>
 <changefreq>always</changefreq>
 </url>
 <url>
 <loc>https://tiaotiaohu128.xyz/index.html</loc>
+<priority>1.0</priority>
 <changefreq>always</changefreq>
 </url>
 </urlset>
