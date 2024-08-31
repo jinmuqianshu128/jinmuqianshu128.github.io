@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: http://tiaotiaohu128.xyz/sitemap.xml
