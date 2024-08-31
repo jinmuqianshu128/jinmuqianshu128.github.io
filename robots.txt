@@ -1,5 +1,0 @@
-# robots.txt generated at https://www.sojson.com/robots/
-Disallow:https://tiaotiaohu128.xyz/sitemap.xml
-Disallow:/admin
-User-agent: *
-Disallow:
