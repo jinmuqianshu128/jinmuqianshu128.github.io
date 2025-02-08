@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content='还在为找靠谱硬件检测工具发愁？试试 TS Tools（铁树工具箱）！专为电脑硬件爱好者与小白打造，常见硬件检测、评分工具一键下载，轻松上手。它轻量化、开源免费、绿色纯净无广告，独特整合优势，让检测更高效，电脑性能一手掌握 ，快来体验！'>
+    <title>TS Tools（铁树工具箱）- 站长简介</title>
+    <link rel="stylesheet" href="/css/myself.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="dbl">
+        <span class="title">铁树不开花</span>
+        <div class="nav-links">
+            <a href="/html/tstools.html" class="nav-link">TS工具箱</a>
+            <a href="/index.html" class="nav-link">音乐解锁</a>
+            <a href="/html/update.html" class="nav-link">更新说明</a>
+            <a href="/index1.html" class="nav-link" id="home-link">返回首页</a>
+        </div>
+    </div>
+
+    <!-- 页面内容 -->
+    <div class="content">
+        <h1>自我介绍</h1>
+        <img src="/img/vx.jpg"alt="我的头像" class="avatar">
+        <p>大家好，我是网站的站长——铁树不开花，一个热爱编程和技术的15岁在校初中生。</p>
+        <p>❗❗❗请往下滑❗❗❗</p>
+        <p>我擅长以下领域：</p>
+        <ul>
+            <li>前端技术（HTML, CSS, JavaScript）</li>
+            <li>后端技术（Node.js, Express）</li>
+            <li>数据库（MySQL, MongoDB）</li>
+            <li>系统编程（C, C++, C#, Java</li>
+        </ul>
+        <p>❗❗❗请往下滑❗❗❗</p>
+        <p>我喜欢在空闲时间学习新技术，参与开源项目，并分享我的知识和经验。</p>
+        <p>欢迎访问我的个人博客，了解更多关于我的信息。</p>
+        
+        <!-- 联系方式 -->
+        <div class="contact">
+            <h2>联系方式</h2>
+            <p>QQ: 1196840762</p>
+            <p>WeChat: benyajianyizi</p>
+            <p>Email: tiaotiaohu128@qq.com</p>
+        </div>
+    </div>
+
+    <!-- 底部版权和备案信息 -->
+    <footer class="footer">
+        <p>© 2025 铁树不开花. 保留所有权利.</p>
+        <p>备案号：京ICP备58149632号</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var links = document.querySelectorAll('.nav-link');
+            var homeLink = document.getElementById('home-link');
+            homeLink.classList.add('active'); // 页面加载时为“返回首页”添加 active 类
+
+            links.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    links.forEach(function(link) {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
