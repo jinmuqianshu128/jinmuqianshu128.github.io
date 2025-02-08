@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content='“TS工具箱，TS Tools，tstools，铁树工具箱”是一款界面简洁明了、体积小巧的软件工具，专为高效追求用户设计。它集成了多种实用功能，让用户在轻松操作的同时完成各类任务'>
+    <meta http-equiv='content-language' content='zh-gb'>
+    <title>TS工具箱-更新说明</title>
+    <style>
+        /* 在小屏幕设备上适应的样式 */
+        @media screen and (max-width: 768px) {
+          /* 样式修改 */
+        }
+
+        /* 在中等屏幕设备上适应的样式 */
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+          /* 样式修改 */
+        }
+
+        /* 大屏幕设备上适应的样式 */
+        @media screen and (min-width: 1025px) {
+          /* 样式修改 */
+        }
+
+        body {
+            overflow: hidden; /* 隐藏溢出部分 */
+            height: 90vh;
+            background: #e7e7e7 url('/img/下载壁纸.png') center no-repeat fixed;
+            background-size: cover; 
+            backdrop-filter: blur(3.5px);
+        }
+
+        .dbl {
+            position: relative;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            background-color: rgb(67, 68, 70);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        .dbl .title {
+            color: white;
+            font-size: large;
+        }
+        .dbl .nav-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .dbl a {
+            color: white;
+            text-decoration: none;
+            font-size: large;
+        }
+        .dbl a:hover {
+            color: rgb(0, 255, 204);
+        }
+        .dbl a.active {
+            color: rgb(255, 0, 0); /* 点击后变红色 */
+        }
+        @media (max-width: 600px) {
+            .dbl {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+            .dbl .nav-links {
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+        .biaoti {
+            position: absolute;
+            top: 1%;
+            left: 44%;
+            color: green;
+            font-weight: bold;
+            font-size: 3rem;
+        }
+        .xiazai {
+            position: absolute;
+            left: 34%;
+            top: 11%;
+            color: red;
+            letter-spacing: 10px;
+            font-size: 2rem;
+        }
+        .xiazaikuang {
+            background-color: pink;
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 27%;
+            left: 36%;
+        }
+        .jieshao {
+            position: absolute;
+            top: -1%;
+            left: 30%;
+            font-size: 1.7rem;
+            color: rgb(0, 94, 255);
+        }
+        .jwa {
+            position: absolute;
+            background-color: #f25d8e;
+            border-radius: 5px;
+            color: #e7e7e7;
+            border: none;
+            cursor: pointer;
+            font-size: 1.25rem;
+            font-weight: bold;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            transform: transform 80ms ease-in;
+            width: 125px;
+            height: 45px;
+            top: 80%;
+            left: 38%;
+        }
+        .jwa:active {
+            transform: scale(0.95);
+        }
+        .gengxinhou1 {
+            top: 5%;
+        }
+        .gengxinhou2 {
+            top: 0%;
+        }
+        .gengxinhou3 {
+            top: -5%;
+        }
+        .gengxinhou4 {
+            top: 0%;
+        }
+        .gengxinhou5 {
+            top: -10%;
+        }
+        .fengexian {
+            position: relative;
+            top: 14.5%;
+        }
+        .box1 {
+            overflow-y: auto;
+            overflow-x: hidden;
+            background-color: rgb(255, 218, 218);
+            position: relative;
+            top: 20%;
+            height: 250px;
+        }
+        #banbenhao {
+            position: relative;
+            left: 14%;
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="dbl">
+        <span class="title">铁树不开花</span>
+        <div class="nav-links">
+            <a href="/html/tstools.html" class="nav-link">TS工具箱</a>
+            <a href="/index.html" class="nav-link">音乐解锁</a>
+            <a href="/index1.html" class="nav-link"  id="home-link">返回首页</a>
+            <a href="#contact" class="nav-link">站长简介</a>
+        </div>
+    </div>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86
+     src="//music.163.com/outchain/player?type=2&id=1413585838&auto=1&height=66"></iframe>
+    <center><p class="biaoti">TS工具箱</p></center>
+    <center><p class="xiazai">↓↓↓点击下方按钮开始下载↓↓↓</p></center>
+
+    <div class="xiazaikuang">
+        <p class="jieshao">此版本为：V1.2.0</p>
+        <hr class="fengexian">
+
+        <div class="box1">
+            <p id="banbenhao" class="gengxinhou3">V1.2.0：  <br>
+                1、优化了界面设计<br>
+                2、在“游戏工具”中增加了几项工具<br>
+            </p>
+            <p id="banbenhao" class="gengxinhou2">V1.1.0：  <br>
+                1、更新软件界面<br>
+                2、增加回收站美化功能<br>
+            </p>  
+            <p id="banbenhao" class="gengxinhou1">V1.0.0：  <br>
+                1、软件发布，测试阶段中......
+            </p>                 
+        </div>
+        <a href="https://github.com/jinmuqianshu128/jinmuqianshu128.github.io/raw/main/TS%E5%B7%A5%E5%85%B7%E7%AE%B1.exe">
+            <button class="jwa">点击下载</button>
+        </a>
+    </div>
+    <script src="/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var links = document.querySelectorAll('.nav-link');
+            var homeLink = document.getElementById('home-link');
+            homeLink.classList.add('active'); // 页面加载时为“返回首页”添加 active 类
+
+            links.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    links.forEach(function(link) {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
