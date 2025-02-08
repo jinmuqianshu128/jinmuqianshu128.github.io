@@ -1,0 +1,151 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #acd8ff; /* 天蓝色背景 */
+    overflow-y: auto; /* 确保可以纵向滚动 */
+    font-size: 18px; /* 放大基础字体大小 */
+}
+
+.dbl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(67, 68, 70);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1000; /* 确保导航栏在最上层 */
+}
+
+.dbl .title {
+    color: white;
+    font-size: 1.5em; /* 放大字体 */
+}
+
+.dbl .nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dbl a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em; /* 放大字体 */
+}
+
+.dbl a:hover {
+    color: rgb(0, 255, 204);
+}
+
+.dbl a.active {
+    color: rgb(255, 0, 0); /* 点击后变红色 */
+}
+
+@media (max-width: 600px) {
+    .dbl {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .dbl .nav-links {
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+.content {
+    padding: 80px 20px; /* 确保内容不被固定的导航栏遮挡 */
+    text-align: center;
+}
+
+.intro {
+    margin-bottom: 40px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: rotate-avatar 4s linear infinite; /* 头像一直旋转 */
+}
+
+@keyframes rotate-avatar {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    75% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+h1 {
+    color: #ff69b4; /* 粉红色 */
+    font-size: 3em; /* 放大字体 */
+}
+
+h2 {
+    color: #ff69b4; /* 粉红色 */
+    font-size: 2.5em; /* 放大字体 */
+    margin-bottom: 20px;
+}
+
+p, ul {
+    color: #333;
+    font-size: 1.5em; /* 放大字体 */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #ffebcd; /* 浅杏色背景 */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contact {
+    margin-top: 40px;
+    background-color: #ffebcd; /* 浅杏色背景 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.contact h2 {
+    color: #ff69b4; /* 粉红色 */
+    font-size: 2.5em; /* 放大字体 */
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: #333;
+    font-size: 1.5em; /* 放大字体 */
+    margin: 5px 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    
+    color: rgb(255, 0, 0);
+    font-size: 1.2em; /* 放大字体 */
+}
