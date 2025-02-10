@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<!-- Free Sitemap Generator http://www.sitemapx.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://tiaotiaohu128.fun/</loc>
+<priority>1.0</priority>
+<lastmod>2025-02-10T10:58:06+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://tiaotiaohu128.fun/index1.html</loc>
+<priority>0.8</priority>
+<lastmod>2025-02-10T10:58:06+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>https://tiaotiaohu128.fun</loc>
+<priority>0.8</priority>
+<lastmod>2025-02-10T02:51:57+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://tiaotiaohu128.fun/html/myself.html</loc>
+<priority>0.6</priority>
+<lastmod>2025-02-10T10:58:08+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://tiaotiaohu128.fun/html/tstools.html</loc>
+<priority>0.6</priority>
+<lastmod>2025-02-10T10:58:07+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://tiaotiaohu128.fun/html/update.html</loc>
+<priority>0.6</priority>
+<lastmod>2025-02-10T10:58:07+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+</urlset>
