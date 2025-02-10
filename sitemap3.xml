@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
+
+<url>
+ <loc>https://www.microsoft.com/zh-cn/edge</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-02-10</lastmod>
+ <changefreq>always</changefreq>
+</url>
+
+<url>
+ <loc>https://www.google.cn/chrome/</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-02-10</lastmod>
+ <changefreq>always</changefreq>
+</url>
+
+<url>
+ <loc>https://www.firefox.com.cn/</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-02-10</lastmod>
+ <changefreq>always</changefreq>
+</url>
+
+<url>
+ <loc>https://git.unlock-music.dev/um/web/wiki/使用提示</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-02-10</lastmod>
+ <changefreq>always</changefreq>
+</url>
+
+<url>
+ <loc>https://tiaotiaohu128.fun/html/tstools.html</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-02-10</lastmod>
+ <changefreq>always</changefreq>
+</url>
+
+<url>
+ <loc>https://tiaotiaohu128.fun/index1.html</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-02-10</lastmod>
+ <changefreq>always</changefreq>
+</url>
+
+<url>
+ <loc>https://tiaotiaohu128.fun/html/update.html</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-02-10</lastmod>
+ <changefreq>always</changefreq>
+</url>
+
+<url>
+ <loc>https://tiaotiaohu128.fun/html/myself.html</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-02-10</lastmod>
+ <changefreq>always</changefreq>
+</url>
+
+<url>
+ <loc>https://tiaotiaohu128.fun</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-02-10</lastmod>
+ <changefreq>always</changefreq>
+</url>
+
+</urlset>
