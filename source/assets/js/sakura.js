@@ -12,7 +12,7 @@
 (function () {
     'use strict';
 
-    var PETAL_SRC = '/assets/img/effects/petal.png';
+    var PETAL_SRC = '/assets/img/effects/petal.webp';
     var PETAL_COUNT = 50;
     var PETAL_BASE_SIZE = 40;
 

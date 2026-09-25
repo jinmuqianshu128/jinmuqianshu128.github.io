@@ -7,7 +7,7 @@ tags:
 categories:
   - 软件更新
 cover: /assets/img/screenshots/jietu.png
-top_img: /assets/img/wallpaper/下载壁纸.png
+top_img: /assets/img/wallpaper/wallpaper-dl.webp
 description: TS工具箱 V1.2.0 发布：优化了界面设计，并在「游戏工具」中增加了几项新工具。
 ---
 

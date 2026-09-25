@@ -1,7 +1,7 @@
 ---
 title: Steam 官方下载
 date: 2026-09-25 12:00:00
-top_img: /assets/img/wallpaper/壁纸2.png
+top_img: /assets/img/wallpaper/wallpaper-2.webp
 description: Steam 客户端官方下载入口，附官方安装包直链。
 ---
 

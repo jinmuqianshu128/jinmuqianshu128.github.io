@@ -1,7 +1,7 @@
 ---
 title: 音乐解锁
 date: 2026-09-25 12:00:00
-top_img: /assets/img/wallpaper/壁纸1.png
+top_img: /assets/img/wallpaper/wallpaper-1.webp
 description: 在任何设备上解锁已购的加密音乐 —— 在浏览器中移除已购音乐的加密保护，支持在线/离线转换成 MP3。
 ---
 

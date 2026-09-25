@@ -7,8 +7,8 @@ tags:
   - 建站
 categories:
   - 折腾记录
-cover: /assets/img/wallpaper/壁纸2.png
-top_img: /assets/img/wallpaper/壁纸2.png
+cover: /assets/img/wallpaper/wallpaper-2.webp
+top_img: /assets/img/wallpaper/wallpaper-2.webp
 description: 记录一次把纯手写 HTML 的个人站迁移到 Hexo 博客的完整过程，包括目录怎么分、资源路径为什么必须改、以及踩到的几个坑。
 ---
 
@@ -44,7 +44,7 @@ Butterfly 主题自己就占用了根目录的 `/css/`、`/js/`、`/img/`。而�
 | --- | --- |
 | `/css/base.css` | `/assets/css/base.css` |
 | `/js/sakura.js` | `/assets/js/sakura.js` |
-| `/img/avatar/vx.jpg` | `/assets/img/avatar/vx.jpg` |
+| `/img/avatar/vx.jpg` | `/assets/img/avatar/avatar.webp` |
 
 然后全站做一次路径替换。这里有个细节：**音乐解锁应用的 Webpack 产物不能动** —— 它内部用的是相对路径（`css/`、`js/`、`fonts/`），一改就整个应用加载失败。所以替换时要把 `music/js`、`music/css`、`music/fonts` 三个目录排除掉。
 

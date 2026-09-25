@@ -1,7 +1,7 @@
 ---
 title: 好看的！！！
 date: 2026-09-25 12:00:00
-top_img: /assets/img/wallpaper/壁纸2.png
+top_img: /assets/img/wallpaper/wallpaper-2.webp
 description: 一段小视频。
 comments: false
 ---

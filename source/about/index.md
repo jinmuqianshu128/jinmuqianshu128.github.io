@@ -1,11 +1,11 @@
 ---
 title: 关于
 date: 2026-09-25 12:00:00
-top_img: /assets/img/wallpaper/壁纸1.png
+top_img: /assets/img/wallpaper/wallpaper-1.webp
 comments: false
 ---
 
-<img src="/assets/img/avatar/vx.jpg" alt="站长的头像"
+<img src="/assets/img/avatar/avatar.webp" alt="站长的头像"
      style="width:150px;height:150px;border-radius:50%;object-fit:cover;box-shadow:0 6px 20px rgba(0,0,0,.25);display:block;margin:0 auto 16px;">
 
 <p style="text-align:center;font-size:1.2em;color:#ff69b4;font-weight:bold;margin:0;">铁树不开花</p>

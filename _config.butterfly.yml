@@ -58,17 +58,17 @@ social:
 favicon: /favicon.ico
 
 avatar:
-  img: /assets/img/avatar/vx.jpg
+  img: /assets/img/avatar/avatar.webp
   effect: true
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: /assets/img/wallpaper/壁纸2.png
+default_top_img: /assets/img/wallpaper/wallpaper-2.webp
 
 # The banner image of index page
-index_img: /assets/img/wallpaper/壁纸1.png
+index_img: /assets/img/wallpaper/wallpaper-1.webp
 
 # The banner image of archive page
 archive_img:
