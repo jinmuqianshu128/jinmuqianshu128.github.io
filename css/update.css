@@ -1,0 +1,116 @@
+/* ==========================================================================
+   update.css — 更新说明与下载页（html/update.html）
+   原先内联在该页 <style> 中，现抽离为独立文件。
+   修复要点：
+     1. id="banbenhao" 在页面上重复出现 3 次（id 必须唯一），改为 class。
+     2. .gengxinhou1~5 用 top 偏移但元素是 static 定位，声明完全无效且互相冲突，
+        改用 flex 纵向列表，版本条目自然排列。
+     3. .jwa 的 `transform: transform 80ms ease-in` 写法无效（transform 不能
+        用于补间属性），改为 `transition: transform .08s ease-in`。
+     4. .xiazaikuang 原为 500×500 固定尺寸 + 绝对定位，窄屏会溢出，改为流式卡片。
+   ========================================================================== */
+
+body {
+    min-height: 100vh;
+    font-family: var(--font-stack);
+    background: #e7e7e7 url('/img/wallpaper/下载壁纸.png') center center / cover no-repeat fixed;
+}
+
+.page-title {
+    margin: 0;
+    padding-top: calc(var(--nav-height) + 16px);
+    color: #ff69b4;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.player {
+    display: block;
+    margin: 16px auto 0;
+    border: none;
+}
+
+.biaoti {
+    margin: 16px 0 0;
+    color: green;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.xiazai {
+    margin: 8px 0 20px;
+    color: red;
+    font-size: 2rem;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.xiazaikuang {
+    width: min(500px, 92vw);
+    margin: 0 auto 60px;
+    padding: 20px;
+    background-color: pink;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.jieshao {
+    margin: 0 0 8px;
+    color: #005eff;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.fengexian {
+    margin: 12px 0;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+}
+
+/* 版本记录滚动区 */
+.box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 250px;
+    padding: 8px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgb(255, 218, 218);
+    border-radius: 6px;
+}
+
+.banbenhao {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.download-btn {
+    display: block;
+    margin: 20px auto 0;
+    width: 125px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f25d8e;
+    color: #e7e7e7;
+    font-family: inherit;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform .08s ease-in;
+}
+
+.download-btn:active {
+    transform: scale(.95);
+}
+
+@media (max-width: 600px) {
+    .biaoti { font-size: 2rem; }
+    .xiazai { font-size: 1.2rem; letter-spacing: 4px; }
+    .jieshao { font-size: 1.3rem; }
+}

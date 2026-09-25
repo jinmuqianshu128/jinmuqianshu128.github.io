@@ -1,0 +1,143 @@
+/* ==========================================================================
+   base.css — 全站公共样式
+   包含：设计变量、基础重置、顶部导航栏、页脚、通用响应式
+   说明：导航栏样式原先在 5 个文件中各复制了一份（style.css / myself.css /
+         update.html / tstools.html / index2.html），此处合并为唯一定义。
+   ========================================================================== */
+
+:root {
+    /* 导航配色 */
+    --nav-bg: #434446;
+    --nav-fg: #ffffff;
+    --nav-hover: #00ffcc;
+    --nav-active: #ff0000;
+    --nav-height: 60px;
+
+    /* 主题色 */
+    --pink: #ff69b4;
+    --magenta: magenta;
+    --cream: #ffebcd;
+    --sky: #acd8ff;
+
+    /* 排版与效果 */
+    --font-stack: 'Comic Sans MS', 'Microsoft YaHei', 'Microsoft YaHei UI', cursive, sans-serif;
+    --radius: 10px;
+    --shadow: 0 4px 16px rgba(0, 0, 0, .12);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-stack);
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+/* --------------------------------------------------------------------------
+   顶部导航栏
+   -------------------------------------------------------------------------- */
+.dbl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    min-height: var(--nav-height);
+    padding: 0 20px;
+    background-color: var(--nav-bg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+}
+
+.dbl .title {
+    color: var(--nav-fg);
+    font-size: large;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dbl .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dbl a {
+    color: var(--nav-fg);
+    text-decoration: none;
+    font-size: large;
+    transition: color .2s ease;
+}
+
+.dbl a:hover {
+    color: var(--nav-hover);
+}
+
+.dbl a.active {
+    color: var(--nav-active);
+}
+
+/* 需要避开固定导航栏的正文容器 */
+.page-body {
+    padding-top: calc(var(--nav-height) + 20px);
+}
+
+@media (max-width: 600px) {
+    .dbl {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        padding: 10px;
+    }
+
+    .dbl .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .dbl a,
+    .dbl .title {
+        font-size: 1rem;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   页脚
+   -------------------------------------------------------------------------- */
+.footer {
+    padding: 20px;
+    text-align: center;
+    color: var(--nav-active);
+    font-size: 1.2em;
+}
+
+/* --------------------------------------------------------------------------
+   小屏适配：正文里的固定宽度容器
+   -------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+    .container,
+    .contact {
+        padding: 16px;
+    }
+}

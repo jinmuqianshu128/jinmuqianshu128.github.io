@@ -1,0 +1,78 @@
+/* ==========================================================================
+   download.css — 下载引导页共用样式（html/steam.html、html/epic.html）
+   这两页原先各自内联了一大堆 style 属性，且内容 95% 相同，现收敛为一份样式表。
+   ========================================================================== */
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: #e6e6e6;
+    font-family: 'Microsoft YaHei UI', var(--font-stack);
+}
+
+.player {
+    display: block;
+    margin: 24px auto 0;
+    border: none;
+}
+
+.page-head {
+    text-align: center;
+}
+
+.page-head a {
+    text-decoration: none;
+}
+
+.brand-title {
+    margin: 24px 0 0;
+    font-size: 40pt;
+    color: #ff60b7;
+}
+
+.card {
+    box-sizing: border-box;
+    width: min(1080px, 94vw);
+    margin: 40px auto 60px;
+    background-color: #ffffff;
+    border: 1px solid #0080c0;
+    border-radius: 6px;
+    box-shadow: 5px 5px 8px 0 rgba(192, 192, 192, .59);
+    overflow: hidden;
+}
+
+.card-head {
+    padding: 12px 16px;
+    background-color: #0080ff;
+    color: #ffffff;
+    font-size: 16pt;
+    text-align: center;
+}
+
+.card-body {
+    padding: 24px 20px 32px;
+    color: #0080c0;
+    font-size: 18pt;
+    text-align: center;
+}
+
+.card-body a {
+    color: #5d5d9e;
+}
+
+.card-body a:hover {
+    color: #b2b3b4;
+}
+
+.notice {
+    margin-top: 24px;
+    color: #ff8040;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .brand-title { font-size: 24pt; }
+    .card-body { font-size: 14pt; }
+    .notice { font-size: 12pt; }
+}

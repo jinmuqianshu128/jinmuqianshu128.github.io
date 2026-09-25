@@ -1,199 +1,38 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name='description' content='“TS工具箱，TS Tools，还在为找靠谱硬件检测工具发愁？试试 TS Tools（铁树工具箱）！专为电脑硬件爱好者与小白打造，常见硬件检测、评分工具一键下载，轻松上手。它轻量化、开源免费、绿色纯净无广告，独特整合优势，让检测更高效，电脑性能一手掌握 ，快来体验！'>
-    <meta http-equiv='content-language' content='zh-gb'>
     <title>TS Tools（铁树工具箱）- Get硬件真相</title>
-    <style>
-        /* 在小屏幕设备上适应的样式 */
-        @media screen and (max-width: 768px) {
-          /* 样式修改 */
-        }
-
-        /* 在中等屏幕设备上适应的样式 */
-        @media screen and (min-width: 769px) and (max-width: 1024px) {
-          /* 样式修改 */
-        }
-
-        /* 大屏幕设备上适应的样式 */
-        @media screen and (min-width: 1025px) {
-          /* 样式修改 */
-        }
-
-        body {
-            height: 90vh;
-            background: #e7e7e7 url('/img/下载壁纸.png') center no-repeat fixed;
-            background-size: cover; 
-            backdrop-filter: blur(3.5px);
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            background-color: #f0f8ff; /* 天蓝色背景 */
-            margin: 0;
-            padding: 0;
-        }
-
-        #aa:hover {
-            color: rgb(0, 255, 204);
-        }
-
-        .dbl {
-            position: relative;
-            top: 0;
-            width: 100%;
-            height: 60px;
-            background-color: rgb(67, 68, 70);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-            box-sizing: border-box;
-        }
-        .dbl .title {
-            color: white;
-            font-size: large;
-        }
-        .dbl .nav-links {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .dbl a {
-            color: white;
-            text-decoration: none;
-            font-size: large;
-        }
-        .dbl a:hover {
-            color: rgb(0, 255, 204);
-        }
-        .dbl a.active {
-            color: rgb(255, 0, 0); /* 点击后变红色 */
-        }
-        @media (max-width: 600px) {
-            .dbl {
-                flex-direction: column;
-                height: auto;
-                padding: 10px;
-            }
-            .dbl .nav-links {
-                justify-content: center;
-                gap: 10px;
-            }
-        }
-
-        .a1, .a2, .a3, .a4 {
-            position: absolute;
-            color: white;
-            font-size: large;
-            top: 27.5%;
-        }
-
-        .a1 {
-            right: 14%;
-        }
-
-        .a2 {
-            right: 8%;
-        }
-
-        .a3 {
-            right: 2%;
-        }
-
-        .a4 {
-            right: 20.5%;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: -60px auto; /* 向上移动 20px */
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #ff69b4; /* 粉色标题 */
-        }
-
-        .description {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #666666;
-        }
-
-        .features {
-            margin-bottom: 40px;
-        }
-
-        .features h2 {
-            color: #00bfff; /* 天蓝色副标题 */
-        }
-
-        .features ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .features ul li {
-            background: #ffe4e1; /* 浅粉色功能背景 */
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-            color: #333;
-        }
-
-        .screenshot {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .screenshot img {
-            max-width: 100%;
-            border-radius: 10px;
-            border: 2px solid #ff69b4; /* 粉色边框 */
-        }
-
-        .download {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .download a {
-            background-color: #00bfff; /* 天蓝色下载按钮 */
-            color: #ffffff;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-            transition: background-color 0.3s ease;
-        }
-
-        .download a:hover {
-            background-color: #007bff; /* 深蓝色悬停效果 */
-        }
-    </style>
+    <meta name="description" content="还在为找靠谱硬件检测工具发愁？试试 TS Tools（铁树工具箱）！专为电脑硬件爱好者与小白打造，常见硬件检测、评分工具一键下载，轻松上手。它轻量化、开源免费、绿色纯净无广告。">
+    <meta name="keywords" content="TS工具箱,TS Tools,铁树工具箱,硬件检测,电脑评分工具,免费绿色软件">
+    <meta name="theme-color" content="#434446">
+    <meta http-equiv="content-language" content="zh-CN">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/tstools.css">
 </head>
 <body>
     <!-- 顶部导航栏 -->
-    <div class="dbl">
-        <span class="title">铁树不开花</span>
-        <div class="nav-links">
-            <a href="/index1.html" class="nav-link"  id="home-link">返回首页</a>
-            <a href="/index.html" class="nav-link">音乐解锁</a>
-            <a href="/html/update.html" class="nav-link">更新说明</a>
-            <a href="/html/myself.html" class="nav-link">站长简介</a>
-        </div>
-    </div>
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86"
-     src="//music.163.com/outchain/player?type=2&id=1413585838&auto=1&height=66"></iframe>
-    <div class="container">
+    <header class="dbl">
+        <a class="title" href="/">铁树不开花</a>
+        <nav class="nav-links" aria-label="主导航">
+            <a class="nav-link" href="/">首页</a>
+            <a class="nav-link" href="/html/tstools.html">TS工具箱</a>
+            <a class="nav-link" href="/music/">音乐解锁</a>
+            <a class="nav-link" href="/html/update.html">更新说明</a>
+            <a class="nav-link" href="/html/myself.html">站长简介</a>
+        </nav>
+    </header>
+
+    <iframe class="player" title="网易云音乐播放器" width="330" height="86"
+            src="//music.163.com/outchain/player?type=2&amp;id=1413585838&amp;auto=1&amp;height=66"></iframe>
+
+    <main class="container">
         <h1>TS工具箱</h1>
         <p class="description">这是一款高效、易用的工具箱，帮助您提高工作效率。</p>
 
-        <div class="features">
+        <section class="features">
             <h2>主要功能</h2>
             <ul>
                 <li>功能1：简单易用的界面设计</li>
@@ -201,31 +40,19 @@
                 <li>功能3：多平台支持</li>
                 <li>功能4：小白更容易上手</li>
             </ul>
-        </div>
+        </section>
+
         <div class="download">
             <a href="https://github.com/jinmuqianshu128/jinmuqianshu128.github.io/raw/main/TS%E5%B7%A5%E5%85%B7%E7%AE%B1.exe" download>立即下载</a>
         </div>
-        <div class="screenshot">
-            <h2>软件截图</h2>
-            <img src="/img/jietu.png" alt="软件截图">
-        </div>
-    </div>
-    <script src="/js/script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var links = document.querySelectorAll('.nav-link');
-            var homeLink = document.getElementById('home-link');
-            homeLink.classList.add('active'); // 页面加载时为“返回首页”添加 active 类
 
-            links.forEach(function(link) {
-                link.addEventListener('click', function() {
-                    links.forEach(function(link) {
-                        link.classList.remove('active');
-                    });
-                    this.classList.add('active');
-                });
-            });
-        });
-    </script>
+        <section class="screenshot">
+            <h2>软件截图</h2>
+            <img src="/img/screenshots/jietu.png" alt="TS工具箱软件截图">
+        </section>
+    </main>
+
+    <script src="/js/nav.js" defer></script>
+    <script src="/js/sakura.js" defer></script>
 </body>
 </html>

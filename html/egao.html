@@ -1,73 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name='description' content='震惊！一个在校学生竟然凭自己一人写了一个个人博客，而他就是前无古人后无来者，上得厅堂下得厨房，能文能武，身怀绝技，一手遮天，大名鼎鼎的武林第一美男子————“铁树不开花”'>
-    <meta http-equiv='content-language' content='en-gb'>
-    <title>好看的！！！</title>
-    <style>
-        .video1{
-            width: 100%;
-            overflow: clip;
-        }
-        :not(:root):fullscreen {
-    object-fit: contain;
-    user-select: text;
-    position: fixed !important;
-    box-sizing: border-box !important;
-    min-width: 0px !important;
-    max-width: none !important;
-    min-height: 0px !important;
-    max-height: none !important;
-    width: 100% !important;
-    height: 100% !important;
-    transform: none !important;
-    inset: 0px !important;
-    margin: 0px !important;
-}
-    :not(:root):fullscreen::backdrop {
-    position: fixed;
-    inset: 0px;
-    background: black;
-}
-    </style>
+    <title>好看的！！！ - 铁树不开花</title>
+    <meta name="description" content="铁树不开花的视频彩蛋页。">
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="/css/egao.css">
 </head>
 <body>
-    <body>
+    <!--
+      原文件的问题（已修复）：
+        1. 存在嵌套的 <body><body>，属于非法结构，解析器会自动纠正并留下空标签。
+        2. 页面加载时立刻调用 requestFullScreen()：浏览器要求全屏必须由用户手势触发，
+           该调用必然失败并在控制台抛错。现改为「点击视频进入全屏」。
+        3. changeFrameHeight() 操作的是不存在的 #iframepage 元素，一执行就抛 TypeError，
+           且通过 window.onresize = 赋值会覆盖其它处理器，整段已移除。
+        4. autoplay 未加 muted，现代浏览器会直接阻止带声自动播放，视频不会动。
+    -->
+    <video id="player" class="video1" preload="auto" autoplay muted controls loop playsinline
+           src="/video/video.mp4"></video>
 
-        <video class="video1" preload="auto" autoplay controls loop="loop" src="/video/video.mp4"></video>
+    <script>
+        (function () {
+            'use strict';
 
-        <script>
-    requestFullScreen();
-    function requestFullScreen(element) {
-	var element=document.documentElement;
- // 判断各种浏览器，找到正确的方法
- //alert(element.webkitRequestFullScreen);
- var requestMethod = element.requestFullScreen || //W3C
- element.webkitRequestFullScreen || //Chrome等
- element.mozRequestFullScreen || //FireFox
- element.msRequestFullScreen; //IE11
- if (requestMethod) {
-  requestMethod.call(element);
- }
- else if (typeof window.ActiveXObject !== "undefined") {//for Internet Explorer
-  var wscript = new ActiveXObject("WScript.Shell");
-  if (wscript !== null) {
-   wscript.SendKeys("{F11}");
-  }
- }
-}
-function changeFrameHeight(){
-    var ifm= document.getElementById("iframepage"); 
-    ifm.height=document.documentElement.clientHeight;
+            var video = document.getElementById('player');
 
-}
+            function requestFullscreen(el) {
+                var fn = el.requestFullscreen ||
+                    el.webkitRequestFullscreen ||
+                    el.mozRequestFullScreen ||
+                    el.msRequestFullscreen;
+                if (fn) {
+                    fn.call(el);
+                }
+            }
 
-window.onresize=function(){  
-     changeFrameHeight();  
-
-} 
-        </script>
-      </body>      
+            // 带声播放与全屏都需要用户手势，因此在点击时触发
+            video.addEventListener('click', function () {
+                video.muted = false;
+                if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+                    requestFullscreen(video);
+                }
+            });
+        })();
+    </script>
 </body>
 </html>

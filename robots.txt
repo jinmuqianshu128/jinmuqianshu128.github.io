@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /html/egao.html
+Disallow: /seo/
+
+Sitemap: https://tiaotiaohu128.fun/sitemap.xml

@@ -1,0 +1,66 @@
+/* ==========================================================================
+   shell.css — 音乐解锁页面外壳样式（music/index.html）
+   原先这段样式内联在 index2.html 的 <style> 里，现抽离为独立文件。
+   已移除其中的 .dbl 导航样式（与全站重复，统一由 /css/base.css 提供）。
+   ========================================================================== */
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* 首屏加载指示器 */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1010;
+    margin: -75px 0 0 -75px;
+    width: 120px;
+    height: 120px;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #1db1ff;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0%   { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+#loader-mask {
+    position: absolute;
+    inset: 0;
+    z-index: 1009;
+    text-align: center;
+    background-color: rgba(242, 246, 252, .88);
+}
+
+#loader-source {
+    font-size: 1.5rem;
+}
+
+#loader-tips-timeout {
+    font-size: 1.2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    #loader-mask {
+        color: #fff;
+        background-color: rgba(0, 0, 0, .85);
+    }
+
+    #loader-mask a {
+        color: #ddd;
+    }
+
+    #loader-mask a:hover {
+        color: #1db1ff;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #loader {
+        animation-duration: 4s;
+    }
+}

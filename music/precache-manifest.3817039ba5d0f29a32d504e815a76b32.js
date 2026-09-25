@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "fonts/element-icons.732389de.ttf"
   },
   {
-    "revision": "4fa15f7f37ab6d311c8610fb1aecbd0f",
+    "revision": "refactor-20260925",
     "url": "index.html"
   },
   {
@@ -37,6 +37,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "cd1d395410107c66b4534ec93f0073d3",
-    "url": "web-manifest.json"
+    "url": "manifest.json"
   }
 ]);
