@@ -33,9 +33,15 @@ i18n_dir: :lang
 
 # 这些路径下的文件原样复制，交给 Hexo 渲染反而会出错
 skip_render:
-  - 'tools/**'
-  - 'music/**'
+  # 音乐解锁应用的构建产物：整体原样复制，交给 Hexo 处理反而会出错
+  - 'music/css/**'
+  - 'music/js/**'
+  - 'music/fonts/**'
+  - 'music/*.js'
+  - 'music/*.json'
+  # 站点自有资源与本地化的第三方库
   - 'assets/**'
+  - 'pluginsSrc/**'
   - 'index1.html'
   - 'index2.html'
   - '404.html'

@@ -10,7 +10,7 @@ body {
 
 /* 首屏加载指示器 */
 #loader {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     z-index: 1010;
@@ -29,7 +29,7 @@ body {
 }
 
 #loader-mask {
-    position: absolute;
+    position: fixed;
     inset: 0;
     z-index: 1009;
     text-align: center;
@@ -63,4 +63,18 @@ body {
     #loader {
         animation-duration: 4s;
     }
+}
+
+/* --------------------------------------------------------------------------
+   Element UI 通知卡片
+   音乐解锁启动时会弹一条 el-notification。它默认按 left 定位，
+   在本站布局下会被算成负值，卡片一半露在屏幕左侧、压住站点标题。
+   这里统一挪到右上角。
+   -------------------------------------------------------------------------- */
+.el-notification,
+.el-notification.left,
+.el-notification.right {
+    left: auto !important;
+    right: 16px !important;
+    z-index: 2000;
 }
