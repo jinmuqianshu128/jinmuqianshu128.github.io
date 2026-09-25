@@ -29,5 +29,11 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-butterfly": "^5.7.0",
     "hexo-wordcount": "^6.0.1"
+  },
+  "devDependencies": {
+    "@egjs/infinitegrid": "^4.13.0",
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "butterfly-extsrc": "^1.1.6",
+    "typed.js": "^3.0.0"
   }
 }
