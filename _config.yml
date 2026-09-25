@@ -1,0 +1,109 @@
+# ===========================================================================
+# Hexo 站点主配置
+# 主题配置见 _config.butterfly.yml
+# ===========================================================================
+
+# --- 站点信息 ---------------------------------------------------------------
+title: 铁树不开花
+subtitle: '私はすべてを壊す'
+description: 'TS 工具箱（TS Tools）与音乐解锁的发布站点，也是一名在校高中生的技术笔记。'
+keywords: 'TS工具箱,TS Tools,铁树工具箱,音乐解锁,硬件检测,铁树不开花,个人博客'
+author: 铁树不开花
+language: zh-CN
+timezone: 'Asia/Shanghai'
+
+# --- 网址 -------------------------------------------------------------------
+# GitHub Pages 的实际地址；若日后启用自定义域名，改这里即可
+url: https://jinmuqianshu128.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+
+# --- 目录 -------------------------------------------------------------------
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+
+# 这些路径下的文件原样复制，交给 Hexo 渲染反而会出错
+skip_render:
+  - 'tools/**'
+  - 'music/**'
+  - 'assets/**'
+  - 'index1.html'
+  - 'index2.html'
+  - '404.html'
+  - 'baidu_verify_*.html'
+  - 'BingSiteAuth.xml'
+
+# --- 写作 -------------------------------------------------------------------
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: '  '
+  wrap: true
+  hljs: false
+
+# --- 首页 -------------------------------------------------------------------
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+default_category: 随笔
+category_map:
+tag_map:
+
+# --- 日期格式 ---------------------------------------------------------------
+meta_generator: true
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# --- 分页 -------------------------------------------------------------------
+per_page: 10
+pagination_dir: page
+
+# --- 主题 -------------------------------------------------------------------
+theme: butterfly
+
+# 部署交给 GitHub Actions（见 .github/workflows/pages.yml），此处留空
+deploy:
+  type: ''
+
+# --- 插件 -------------------------------------------------------------------
+# Butterfly 的本地搜索读取此文件
+search:
+  path: search.xml
+  field: post
+  content: true
+  template:
+
+sitemap:
+  path: sitemap.xml
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content: true

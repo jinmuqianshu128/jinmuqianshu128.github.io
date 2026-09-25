@@ -1,0 +1,7 @@
+# 依赖与构建产物不入库
+node_modules/
+public/
+db.json
+.deploy*/
+*.log
+.DS_Store

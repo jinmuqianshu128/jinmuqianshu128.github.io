@@ -1,0 +1,55 @@
+---
+title: 关于
+date: 2026-09-25 12:00:00
+top_img: /assets/img/wallpaper/壁纸1.png
+comments: false
+---
+
+<img src="/assets/img/avatar/vx.jpg" alt="站长的头像"
+     style="width:150px;height:150px;border-radius:50%;object-fit:cover;box-shadow:0 6px 20px rgba(0,0,0,.25);display:block;margin:0 auto 16px;">
+
+<p style="text-align:center;font-size:1.2em;color:#ff69b4;font-weight:bold;margin:0;">铁树不开花</p>
+<p style="text-align:center;color:#888;margin-top:4px;">私はすべてを壊す</p>
+
+---
+
+## 你好
+
+大家好，我是这个站点的站长 —— **铁树不开花**，一名热爱编程和技术的在校高中生。
+
+> 在你内心深处，还有无穷的潜力。
+> 有一天当你回首看时，你就会知道这绝对是真的。
+
+> ある日振り返ってみると、これは絶対に本当だとわかるでしょう。
+
+## 我在做什么
+
+这个站点上目前有两样东西：
+
+| 项目 | 说明 | 入口 |
+| --- | --- | --- |
+| **TS 工具箱** | 一款轻量、开源免费、绿色无广告的硬件检测工具合集，专为电脑硬件爱好者与小白打造 | [前往](/tools/tstools.html) |
+| **音乐解锁** | 在浏览器里解锁已购的加密音乐，移除已购音乐的加密保护，支持在线/离线转成 MP3 | [前往](/music/) |
+
+除此之外，这个博客用来记录我在学习和折腾过程中踩过的坑。
+
+## 我擅长什么
+
+- **前端**：HTML、CSS、JavaScript
+- **后端**：Node.js、Express
+- **数据库**：MySQL、MongoDB
+- **系统编程**：C、C++、C#、Java、Python
+
+我喜欢在空闲时间学习新技术，参与开源项目，并分享我的知识和经验。
+
+## 联系我
+
+<div style="background:#ffebcd;padding:16px 20px;border-radius:10px;line-height:2;">
+
+**QQ**：1196840762
+**WeChat**：tieshu128
+**Email**：tiaotiaohu128@gmail.com
+
+</div>
+
+<p style="text-align:center;color:#999;font-size:.9em;margin-top:24px;">© 2026 铁树不开花 · 京ICP备58149632号</p>

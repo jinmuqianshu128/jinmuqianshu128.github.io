@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /tools/egao.html
+
+Sitemap: https://jinmuqianshu128.github.io/sitemap.xml

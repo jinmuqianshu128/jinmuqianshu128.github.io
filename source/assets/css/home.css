@@ -1,0 +1,137 @@
+/* ==========================================================================
+   home.css — 首页（index.html）
+   原 style.css 的首页部分。
+   修复要点：
+     1. 原先 body 设了 overflow:hidden，而各标题用 top:100%~197% 绝对定位，
+        导致「在你内心深处…」之后的文字全部被裁掉、永远看不到。
+        现改为 flex 纵向流式排版，内容全部可见且垂直居中。
+     2. 标题固定 width(350px/525px/725px) 在窄屏会溢出，改用 max-width。
+     3. 移除无效声明：.jwa 的 `transform: transform 80ms ease-in`（应为 transition）。
+     4. 背景毛玻璃：原文件在 body 上写了 backdrop-filter，但元素自身的背景
+        无法被自己的 backdrop-filter 模糊，该声明实际毫无效果。
+        现改为用 body::before 承载背景图并施加 blur，再让内容区成为玻璃卡片。
+   ========================================================================== */
+
+body {
+    min-height: 100vh;
+    background-color: #dfe4ea;
+    overflow-x: hidden;
+}
+
+/* 背景层：铺满视口的壁纸，施加模糊形成毛玻璃底。
+   外扩 inset 避免模糊后四周出现半透明边缘。 */
+body::before {
+    content: '';
+    position: fixed;
+    inset: -40px;
+    z-index: -1;
+    background: url('/assets/img/wallpaper/壁纸1.png') center center / cover no-repeat;
+    filter: blur(10px) saturate(115%);
+    pointer-events: none;
+}
+
+.center {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: calc(var(--nav-height) + 32px) 20px 48px;
+}
+
+/* 玻璃卡片：半透明底 + backdrop-filter，叠在模糊背景上形成层次 */
+.glass-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: min(880px, 92vw);
+    padding: 40px 48px;
+    text-align: center;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, .12);
+    border: 1px solid rgba(255, 255, 255, .3);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, .3);
+    -webkit-backdrop-filter: blur(8px) saturate(130%);
+    backdrop-filter: blur(8px) saturate(130%);
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, .85);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, .35);
+    object-fit: cover;
+}
+
+.hh,
+.hhh,
+.hhhh,
+.hhhhh,
+.hhhhhh {
+    margin: 0;
+    line-height: 1.4;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .35);
+}
+
+.hh {
+    color: var(--magenta);
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.hhh {
+    color: #ff0000;
+    font-size: 40px;
+    font-weight: 300;
+    max-width: 90vw;
+}
+
+.hhhh,
+.hhhhh,
+.hhhhhh {
+    color: #ff0000;
+    font-size: 25px;
+    font-weight: 300;
+    max-width: 90vw;
+}
+
+.hhhhh {
+    max-width: min(725px, 90vw);
+}
+
+.hhhhhh {
+    max-width: min(860px, 90vw);
+    color: #d40000;
+}
+
+/* 浏览器不支持 backdrop-filter 时，加深底色保证文字可读 */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .glass-card {
+        background: rgba(0, 0, 0, .32);
+    }
+}
+
+@media (max-width: 600px) {
+    .glass-card {
+        padding: 24px 20px;
+        border-radius: 18px;
+    }
+
+    .circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .hh,
+    .hhh {
+        font-size: 28px;
+    }
+
+    .hhhh,
+    .hhhhh,
+    .hhhhhh {
+        font-size: 17px;
+    }
+}

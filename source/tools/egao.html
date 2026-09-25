@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>好看的！！！ - 铁树不开花</title>
+    <meta name="description" content="铁树不开花的视频彩蛋页。">
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="/assets/css/egao.css">
+</head>
+<body>
+    <!--
+      原文件的问题（已修复）：
+        1. 存在嵌套的 <body><body>，属于非法结构，解析器会自动纠正并留下空标签。
+        2. 页面加载时立刻调用 requestFullScreen()：浏览器要求全屏必须由用户手势触发，
+           该调用必然失败并在控制台抛错。现改为「点击视频进入全屏」。
+        3. changeFrameHeight() 操作的是不存在的 #iframepage 元素，一执行就抛 TypeError，
+           且通过 window.onresize = 赋值会覆盖其它处理器，整段已移除。
+        4. autoplay 未加 muted，现代浏览器会直接阻止带声自动播放，视频不会动。
+    -->
+    <video id="player" class="video1" preload="auto" autoplay muted controls loop playsinline
+           src="/assets/video/video.mp4"></video>
+
+    <script>
+        (function () {
+            'use strict';
+
+            var video = document.getElementById('player');
+
+            function requestFullscreen(el) {
+                var fn = el.requestFullscreen ||
+                    el.webkitRequestFullscreen ||
+                    el.mozRequestFullScreen ||
+                    el.msRequestFullscreen;
+                if (fn) {
+                    fn.call(el);
+                }
+            }
+
+            // 带声播放与全屏都需要用户手势，因此在点击时触发
+            video.addEventListener('click', function () {
+                video.muted = false;
+                if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+                    requestFullscreen(video);
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
