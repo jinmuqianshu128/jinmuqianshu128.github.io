@@ -38,12 +38,9 @@ body {
     100% { transform: rotate(0deg); }
 }
 
-/* 尊重系统的「减弱动效」设置 */
-@media (prefers-reduced-motion: reduce) {
-    .avatar {
-        animation: none;
-    }
-}
+/* 说明：刻意不为 .avatar 加 prefers-reduced-motion 禁用。
+   该旋转是站点主人要求保留的效果，加了禁用会让开启了
+   「减弱动态效果」的系统上头像完全不再旋转。 */
 
 h1 {
     color: var(--pink);

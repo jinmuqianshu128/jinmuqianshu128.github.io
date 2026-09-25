@@ -16,10 +16,9 @@
     var PETAL_COUNT = 50;
     var PETAL_BASE_SIZE = 40;
 
-    // 尊重系统的「减弱动效」设置
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        return;
-    }
+    // 说明：这里刻意不做 prefers-reduced-motion 拦截。
+    // 该动效是站点主人明确要求保留的视觉装饰，重构前的原实现同样没有禁用逻辑；
+    // 早先按无障碍惯例加的 `return` 会让开启了「减弱动态效果」的系统上花瓣完全不出现。
 
     var petalImage = new Image();
     var rafId = null;
