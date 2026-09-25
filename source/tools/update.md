@@ -1,5 +1,5 @@
 ---
-title: 更新说明与下载
+title: TS工具箱更新日志与下载
 date: 2026-09-25 12:00:00
 top_img: /assets/img/wallpaper/wallpaper-dl.webp
 description: TS工具箱的版本更新记录与下载入口，当前版本 V1.2.0。

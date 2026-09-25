@@ -269,7 +269,7 @@ footer:
   copyright:
     enable: true
     version: true
-  custom_text: 铁树不开花 · 京ICP备58149632号
+  custom_text: 保持热爱，奔赴山海
 
 # --------------------------------------
 # Aside Settings
@@ -294,10 +294,10 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/jinmuqianshu128
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 🌕 中秋快乐，愿你和家人团圆美满
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -1064,7 +1064,7 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    # - <script src="xxxx"></script>
+    - <script src="/assets/js/stats-fallback.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work

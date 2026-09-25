@@ -1,5 +1,5 @@
 ---
-title: 关于
+title: 关于站长
 date: 2026-09-25 12:00:00
 top_img: /assets/img/wallpaper/wallpaper-1.webp
 comments: false
@@ -52,4 +52,4 @@ comments: false
 
 </div>
 
-<p style="text-align:center;color:#999;font-size:.9em;margin-top:24px;">© 2026 铁树不开花 · 京ICP备58149632号</p>
+<p style="text-align:center;color:#999;font-size:.9em;margin-top:24px;">© 2026 铁树不开花 · 感谢来访</p>

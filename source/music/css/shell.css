@@ -4,8 +4,20 @@
    已移除其中的 .dbl 导航样式（与全站重复，统一由 /css/base.css 提供）。
    ========================================================================== */
 
+/* 字体与全站统一：应用自带的 Webpack 产物里写的是 Comic Sans MS，
+   这里用同优先级的后加载规则覆盖掉。 */
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+/* 应用内部有些组件单独指定了字体，一并拉齐 */
+.el-button,
+.el-input__inner,
+.el-message-box,
+.el-message-box__title,
+.el-notification,
+.el-upload__text {
+    font-family: inherit;
 }
 
 /* 首屏加载指示器 */

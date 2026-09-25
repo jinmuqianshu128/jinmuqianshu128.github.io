@@ -1,5 +1,5 @@
 ---
-title: Epic 官方下载
+title: Epic 官方下载入口 - 附官方安装包直链
 date: 2026-09-25 12:00:00
 top_img: /assets/img/wallpaper/wallpaper-2.webp
 description: Epic Games Launcher 官方下载入口，附官方安装包直链。

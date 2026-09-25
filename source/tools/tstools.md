@@ -1,5 +1,5 @@
 ---
-title: TS工具箱
+title: TS工具箱下载 - 硬件检测工具合集
 date: 2026-09-25 12:00:00
 top_img: /assets/img/wallpaper/wallpaper-dl.webp
 description: 一款高效、易用的硬件检测工具合集，轻量、开源免费、绿色纯净无广告。
