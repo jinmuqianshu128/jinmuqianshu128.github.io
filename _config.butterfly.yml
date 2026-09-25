@@ -269,7 +269,7 @@ footer:
   copyright:
     enable: true
     version: true
-  custom_text: 保持热爱，奔赴山海
+  custom_text: 本站已稳定运行 <span data-site-runtime>--</span>
 
 # --------------------------------------
 # Aside Settings
@@ -443,10 +443,12 @@ wordcount:
   total_wordcount: true
 
 # Busuanzi count for PV / UV in site
+# 不蒜子的取数接口在当前网络下不可达，数字会一直停在加载动画上，
+# 因此关闭访客统计，改用页脚的「站点运行时间」（纯本地计算，零请求）。
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # --------------------------------------
 # Math
@@ -1064,7 +1066,7 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - <script src="/assets/js/stats-fallback.js"></script>
+    - <script src="/assets/js/site-runtime.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
