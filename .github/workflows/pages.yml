@@ -35,6 +35,11 @@ jobs:
       - name: Build
         run: npx hexo generate
 
+      # hexo-generator-sitemap 会漏掉 /archives/ 且 URL 带 index.html 后缀，
+      # 这里用它生成的完整规范版本覆盖掉
+      - name: Build sitemap
+        run: node scripts/build-sitemap.js
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

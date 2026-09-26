@@ -1,5 +1,16 @@
+# 铁树不开花 — https://jinmuqianshu128.github.io
+# 说明：Allow: / 之后再写 Disallow，是更具体的规则优先，不需要重复 Allow。
+
 User-agent: *
 Allow: /
+
+# 恶搞页，主动排除，站长后台也不提交
 Disallow: /tools/egao.html
 
+# 纯跳转的过渡页与旧文件名残留，没有独立内容
+Disallow: /tools/tstools.html
+Disallow: /index1.html
+Disallow: /index2.html
+
+# 由 build-sitemap.js 生成，每次构建后覆盖
 Sitemap: https://jinmuqianshu128.github.io/sitemap.xml
