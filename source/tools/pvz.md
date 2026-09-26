@@ -47,6 +47,17 @@ description: 适用于《植物大战僵尸》汉化版的游戏辅助工具，�
 
 版本记录见 [更新说明](/tools/update.html)。
 
+## 软件截图
+
+![PVZ汉化版助手 主界面](/assets/img/screenshots/pvz-menu.webp)
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:16px 0;">
+  <img src="/assets/img/screenshots/pvz-features.webp" alt="实用功能" style="width:100%;border-radius:8px;">
+  <img src="/assets/img/screenshots/pvz-bullets.webp" alt="子弹效果" style="width:100%;border-radius:8px;">
+  <img src="/assets/img/screenshots/pvz-cooldown.webp" alt="植物冷却" style="width:100%;border-radius:8px;">
+  <img src="/assets/img/screenshots/pvz-others.webp" alt="其他功能" style="width:100%;border-radius:8px;">
+</div>
+
 ## 注意事项
 
 - 同时开启的功能过多时，游戏有概率崩溃，建议按需开启。
