@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Wallpaper glassmorphism
+   Goal: blur + dim the top banner wallpaper so the white title text on it
+         stays clearly legible.
+   How:  #page-header keeps its inline background-image (so `inherit` can read
+         the URL) but stops painting it via background-size:0 0. The ::after
+         pseudo-element inherits that same image, blurs it, and is pushed back
+         to the bottom with z-index:-1.
+   Stacking order (bottom -> top):
+         parent background-color
+           -> ::after  blurred wallpaper (z-index:-1)
+           -> ::before theme's own rgba(0,0,0,.3) overlay
+           -> content (title / nav)
+   NOTE: comments are ASCII-only on purpose, so the file renders identically
+         no matter which charset a host or local server declares.
+   ========================================================================== */
+
+#page-header {
+  /* Create a stacking context so ::after's negative z-index stays inside this
+     element. Without it the pseudo-element escapes to the outer context and
+     ends up painted *behind* the body background. */
+  isolation: isolate;
+  /* Stop drawing the crisp original image (URL is kept for ::after to inherit) */
+  background-size: 0 0 !important;
+  /* Clip the overflow caused by the blur+scale below, avoiding soft edges */
+  overflow: hidden;
+}
+
+#page-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* Sits above the parent background, below the theme overlay and the content */
+  z-index: -1;
+  pointer-events: none;
+
+  /* Inherit the wallpaper URL from #page-header */
+  background-image: inherit;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: inherit;
+
+  /* The glassmorphism itself: blur + dim + slight saturation boost
+     (the boost compensates for the washed-out look dimming introduces).
+     Dimming is what actually makes the overlaid text pop. */
+  filter: blur(10px) brightness(0.8) saturate(1.2);
+  /* Slightly oversized so the transparent falloff of blur() stays off-screen */
+  transform: scale(1.12);
+}
+
+/* Pages without a top_img have background-image:none, so ::after paints
+   nothing and there is no side effect. In dark mode the wallpaper is already
+   dark, so dim it less to keep some detail visible. */
+[data-theme="dark"] #page-header::after {
+  filter: blur(10px) brightness(0.9) saturate(1.15);
+}
+
+/* --------------------------------------------------------------------------
+   Avatar: stop the endless spin
+   avatar_turn_around on .avatar-img is a 2s linear infinite animation. An
+   animation that never ends keeps the compositor producing frames forever,
+   which costs battery on laptops/phones and can stutter low-end devices.
+   The .avatar-img img:hover rotate(360deg) is kept: it only fires on hover,
+   so it costs nothing while idle.
+   -------------------------------------------------------------------------- */
+.avatar-img {
+  animation: none !important;
+}
