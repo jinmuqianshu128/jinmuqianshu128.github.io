@@ -5,9 +5,9 @@
 
 # --- 站点信息 ---------------------------------------------------------------
 title: 铁树不开花
-subtitle: 'TS工具箱 · 音乐解锁 · 技术笔记'
-description: 'TS 工具箱（TS Tools）与音乐解锁的发布站点，也是一名在校高中生的技术笔记。'
-keywords: 'TS工具箱,TS Tools,铁树工具箱,音乐解锁,硬件检测,铁树不开花,个人博客'
+subtitle: 'PVZ汉化版助手 · 音乐解锁 · 技术笔记'
+description: 'PVZ汉化版助手与音乐解锁的发布站点，也是一名在校高中生的技术笔记。'
+keywords: 'PVZ汉化版助手,植物大战僵尸辅助,PVZ修改器,音乐解锁,铁树不开花,个人博客'
 author: 铁树不开花
 language: zh-CN
 timezone: 'Asia/Shanghai'
@@ -39,6 +39,8 @@ skip_render:
   - 'music/fonts/**'
   - 'music/*.js'
   - 'music/*.json'
+  # 旧地址跳转页：原样复制，不要被主题套上外壳
+  - 'tools/tstools.html'
   # 站点自有资源与本地化的第三方库
   - 'assets/**'
   - 'pluginsSrc/**'

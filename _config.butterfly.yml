@@ -20,7 +20,7 @@ nav:
 menu:
   首页: / || fas fa-home
   归档: /archives/ || fas fa-archive
-  TS工具箱: /tools/tstools.html || fas fa-toolbox
+  PVZ汉化版助手: /tools/pvz.html || fas fa-gamepad
   音乐解锁: /music/ || fas fa-music
   更新说明: /tools/update.html || fas fa-sync-alt
   关于: /about/ || fas fa-user
